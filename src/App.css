@@ -1,0 +1,38 @@
+.App {
+  display: flex;
+  min-height: 100vh;
+  background-color: #F7CDB2;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  /* width: 3163px;
+  height: 5741px; */
+  width: 80%;
+  height: 87vh;
+}
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.clipped {
+  width: 100%;
+  height: 87vh;
+  background: turquoise url(https://source.unsplash.com/600x600?summer);
+  background-size: cover;
+  -webkit-clip-path: url(#my-clip-path);
+  clip-path: url(#my-clip-path);
+}
+/* .right {
+  position: absolute;
+  width: 800px;
+  height: 450px;
+  background-color: yellow;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+  margin: 12px;
+  bottom: 0;
+} */
