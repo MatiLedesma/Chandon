@@ -19,9 +19,11 @@
   height: 0;
 }
 .clipped {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: 87vh;
-  background: turquoise url(https://source.unsplash.com/600x600?summer);
+  background: #F2E9DB;
   background-size: cover;
   -webkit-clip-path: url(#my-clip-path);
   clip-path: url(#my-clip-path);
@@ -36,3 +38,85 @@
   margin: 12px;
   bottom: 0;
 } */
+
+
+
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.inside-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+  width: 50%;
+  border-radius: 10rem;
+  border: 1px solid #fff ;
+  margin: 3vh;
+  box-shadow: 0.5vh 0.5vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1) ;
+
+}
+
+.input-radio{
+  display: flex;
+  background-color: #000;
+}
+
+
+.shape{
+  width: 80%;
+}
+
+button{
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.btn-container{
+  display: flex;
+  width: 100%;
+  height: 6%;
+}
+
+
+.btn-next{
+  display: flex;
+  width: 50%;
+  background-image: url(../src/svg/btn-next.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.btn-back{
+  display: flex;
+  width: 50%;
+  background-image: url(../src/svg/btn-back.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
