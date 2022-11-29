@@ -15,7 +15,7 @@ export default function shape() {
                     <img className="shape" src={shape1} alt="image" />
                     <input className="input-radio" type="radio" />
             </button>
-            <button className="input-container">
+            <button className="input-contariner">
                     <img className="shape" src={shape2} alt="image" />
                     <input className="input-radio" type="radio" />
             </button>
