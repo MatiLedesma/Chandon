@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="261" height="91" viewBox="0 0 261 91">
+  <defs>
+    <filter id="Rectángulo_83" x="0" y="0" width="261" height="91" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-opacity="0.369"/>
+      <feComposite operator="in" in2="blur"/>
+    </filter>
+    <filter id="Rectángulo_83-2" x="0" y="0" width="261" height="91" filterUnits="userSpaceOnUse">
+      <feOffset dx="4" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur-2"/>
+      <feFlood flood-opacity="0.103" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_970" data-name="Grupo 970" transform="translate(-2713.5 -4076.487)">
+    <g id="Grupo_969" data-name="Grupo 969" transform="translate(2296 2910)">
+      <g id="Grupo_937" data-name="Grupo 937" transform="translate(108 -27.013)">
+        <g data-type="innerShadowGroup">
+          <g transform="matrix(1, 0, 0, 1, 309.5, 1193.5)" filter="url(#Rectángulo_83)">
+            <g id="Rectángulo_83-3" data-name="Rectángulo 83" transform="translate(12.5 12.5)" fill="rgba(255,255,255,0.27)" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="0.5" opacity="0.51">
+              <rect width="228" height="58" rx="29" stroke="none"/>
+              <rect x="0.25" y="0.25" width="227.5" height="57.5" rx="28.75" fill="none"/>
+            </g>
+          </g>
+          <rect id="Rectángulo_83-4" data-name="Rectángulo 83" width="228" height="58" rx="29" transform="translate(322 1206)" fill="rgba(255,255,255,0.27)" opacity="0.51"/>
+          <g transform="matrix(1, 0, 0, 1, 309.5, 1193.5)" filter="url(#Rectángulo_83-2)">
+            <rect id="Rectángulo_83-5" data-name="Rectángulo 83" width="228" height="58" rx="29" transform="translate(12.5 12.5)" fill="#fff" opacity="0.51"/>
+          </g>
+          <g id="Rectángulo_83-6" data-name="Rectángulo 83" transform="translate(322 1206)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="bevel" stroke-width="0.5" opacity="0.51">
+            <rect width="228" height="58" rx="29" stroke="none"/>
+            <rect x="0.25" y="0.25" width="227.5" height="57.5" rx="28.75" fill="none"/>
+          </g>
+        </g>
+        <text id="VOLVER_AL_INICIO" data-name="VOLVER AL INICIO" transform="translate(461 1242)" fill="#fff" font-size="17" font-family="FGroteskBold-Regular, F Grotesk"><tspan x="-77.223" y="0">VOLVER AL INICIO</tspan></text>
+        <g id="Elipse_83" data-name="Elipse 83" transform="translate(327 1212)" stroke="#fff" stroke-width="1" opacity="0.35" fill="url(#linear-gradient)">
+          <circle cx="23.5" cy="23.5" r="23.5" stroke="none"/>
+          <circle cx="23.5" cy="23.5" r="23" fill="none"/>
+        </g>
+        <path id="arrow-alt-circle-right-regular" d="M15.883,25.605V22.977a.791.791,0,0,1,.788-.788h7.62v-4.4a.79.79,0,0,1,1.347-.558l6.5,6.5a.789.789,0,0,1,0,1.117l-6.5,6.5a.788.788,0,0,1-1.347-.558v-4.4h-7.62A.791.791,0,0,1,15.883,25.605Z" transform="translate(374.14 1259.293) rotate(180)"/>
+      </g>
+    </g>
+  </g>
+</svg>

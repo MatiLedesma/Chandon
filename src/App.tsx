@@ -1,9 +1,12 @@
 import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+
 import './App.css';
 import Shape from '../src/components/shape'
 import Msj from '../src/components/msj'
 import Color from '../src/components/color'
 import Start from '../src/components/start'
+import End from '../src/components/end'
 
 function App() {
   return (
