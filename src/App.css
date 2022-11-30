@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Chandon;
+  src: url(font/f_grotesk_bold.otf);
+}
+
+body{
+  font-family: 'Chandon';
+}
+
+
 .App {
   display: flex;
   min-height: 100vh;
@@ -112,6 +122,7 @@ input[type="radio"] {
 }
 
 
+
 input[type="radio"]:checked {
   outline-color: var(--checked-color);
   background-color: #fff;
@@ -141,6 +152,7 @@ input[type="radio"]:checked {
 button{
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-container{

@@ -43,7 +43,7 @@ export default function shape() {
 
   return (
    <div className="main-container">
-      <h3>ELEGÍ LA FORMA</h3>
+      <h1>ELEGÍ LA FORMA</h1>
         <div className="inside-container">
             <button className={opc1 ? "input-container__on" : "input-container__off"} onClick={() => opc1true()}>
                     <img className="shape" src={shape1} alt="image" />
