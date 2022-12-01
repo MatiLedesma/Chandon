@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import shape1 from "../svg/shape1.svg";
 import shape2 from "../svg/shape2.svg";
 
-export default function shape() {
+export default function Shape() {
 
   
   // This state represent the selected side - 1 for left side / 2 for right side / 0 for unselected

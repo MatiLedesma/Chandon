@@ -125,13 +125,13 @@ h1{
   align-items: center;
   height: 40vh;
   background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.684) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.351) 0%, rgba(255,255,255,0) 100%);
   width: 50%;
   border-radius: 10rem;
   border: 1px solid #fff ;
   margin: 3vh;
   box-shadow: 0.5vh 0.5vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1) ;
-
+  transition: all 0.1s;
 }
 
 
@@ -139,6 +139,7 @@ h1{
 .input-container__off{
   display: flex;
   flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0) ;
   justify-content: center;
   align-items: center;
   height: 40vh;
@@ -156,25 +157,30 @@ h1{
 
 
 input[type="radio"] {
-  outline: 0.2vh solid #fff;
+  outline: 0.16vh solid #fff;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   background-color: rgba(255, 255, 255, 0.346);
+  box-shadow: 0.2vh 0.2vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.1vh 0.1vh 2vh rgba(0, 0, 0, 0.1) ;
   margin: 0;
   font: inherit;
   color: #fff;
-  width: 2vh;
-  height: 2vh;
+  width: 3vh;
+  height: 3vh;
   border-radius: 50%;
   margin-top: 5vh;
+  transition: all 0.5s;
 }
 
 
 
 input[type="radio"]:checked {
-  outline-color: var(--checked-color);
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.342);
+  padding: 0.5vh;
+  outline: #fff;
+  border: 2px solid #fff;
+  outline-color: transparent;
   -webkit-animation: outline-checked;
           animation: outline-checked;
   -webkit-animation-duration: 0.1s;
@@ -186,6 +192,15 @@ input[type="radio"]:checked {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.069);
+}
+
+
+input[type="radio"]:checked::before{
+  content: "";
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 @-webkit-keyframes outline-checked {
@@ -210,7 +225,7 @@ input[type="radio"]:checked {
 
 
 .shape{
-  width: 80%;
+  width: 90%;
 }
 
 button{
