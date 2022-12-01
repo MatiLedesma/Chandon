@@ -242,6 +242,11 @@ font-family: 'chandon';
 }
 
 
+.hg-theme-default{
+  background-color: #F2E9DB !important;
+  width: 90% !important;
+}
+
 .shape{
   width: 86%;
   filter: drop-shadow(0.3vh 0.3vh 0.5vh rgba(0, 0, 0, 0.11));
