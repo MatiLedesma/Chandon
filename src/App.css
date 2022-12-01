@@ -223,6 +223,13 @@ input[type="radio"]:checked::before{
 }
 
 
+input[type="text"]{
+  padding-bottom: 7vh;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.069);
+}
+
+
 .shape{
   width: 86%;
   filter: drop-shadow(0.3vh 0.3vh 0.5vh rgba(0, 0, 0, 0.11));

@@ -6,7 +6,6 @@ import Msj from '../src/components/msj'
 import Color from '../src/components/color'
 import Start from '../src/components/start'
 import End from '../src/components/end'
-import img19 from "./img/16.webp";
 import ImgSlider from './config/ImgSlider';
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
           </defs>
         </svg>
         <div className="clipped">
-          <Start />
+          <Msj />
         </div>
       </div>
     </div>
