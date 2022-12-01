@@ -10,7 +10,7 @@ export default function start() {
     <div className="container-inside" >
     
     <div className='container-start'>
-      <h1 style={{color: 'white'}}>¡Muchas Gracias!</h1>
+      <h1 style={{color: 'white'}}>¡Personalizá tu regalo!</h1>
       <div className='button-start'>
       <svg className='svg'>
         <defs>

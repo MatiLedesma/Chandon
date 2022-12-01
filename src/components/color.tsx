@@ -5,7 +5,8 @@ import shape2White from "../svg/shape2_white.svg";
 import shape1Gold from "../svg/shape1_gold.svg";
 import shape2Gold from "../svg/shape2_gold.svg";
 
-export default function shape() {
+export default function Color({}) {
+
 
   
   // This state represent the selected side - 1 for left side / 2 for right side / 0 for unselected
@@ -31,7 +32,7 @@ export default function shape() {
 
   return (
    <div className="main-container">
-      <h1>ELEGÍ LA FORMA</h1>
+      <h1>ELEGÍ EL COLOR</h1>
         <div className="inside-container">
             <button className={opc1 ? "input-container__on" : "input-container__off"} onClick={() => opc1true()}>
                     <img className="shape" src={shape === 1 ? shape1Gold : shape2Gold } alt="image" />

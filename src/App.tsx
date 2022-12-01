@@ -19,7 +19,7 @@ function App() {
           </defs>
         </svg>
         <div className="clipped">
-          <Shape />
+          <Start />
         </div>
       </div>
     </div>
