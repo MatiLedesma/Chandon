@@ -6,8 +6,18 @@
 body{
   font-family: 'Chandon';
   overflow: hidden !important;
+  text-transform: uppercase;
 }
 
+
+.d-flex{
+  display: flex!important;
+}
+
+h1{
+  z-index: 30;
+  font-size: 2.6vh;
+}
 
 .App {
   display: flex;
@@ -32,7 +42,6 @@ body{
 
 
 .clipped {
-  
   justify-content: center;
   width: 100%;
   height: 87vh;
@@ -45,7 +54,7 @@ body{
 }
 
 
-.container-start{
+.container-inside{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,8 +76,8 @@ body{
   width: 20vh;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  -webkit-clip-path: url(#starClip);
-  clip-path: url(#starClip);
+  /* -webkit-clip-path: url(#starClip);
+  clip-path: url(#starClip); */
   z-index: 15;
 }
 
@@ -214,8 +223,7 @@ button{
   display: flex;
   width: 100%;
   height: 7.3%;
-  position: absolute;
-  z-index: 9;
+  z-index: 9;       
 }
 
 
@@ -240,7 +248,7 @@ button{
 
 .btn-restart{
   display: flex;
-  width: 50%;
+  width: 100%;
   background-image: url(../src/svg/btn-restart.svg);
   background-position: center;
   background-size: contain;
@@ -255,3 +263,29 @@ button{
   height: 100vh;
   z-index: 1;
 }
+
+.logo {
+  max-width: 15vh;
+}
+
+.container-start{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 19;
+}
+
+.container-end{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 19;
+}
+
