@@ -14,6 +14,11 @@ const Keyboard: FunctionComponent = () => {
     keyboard.current.setInput(input);
   };
 
+
+
+  console.log(input)
+
+
   return (
 
 
