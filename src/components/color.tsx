@@ -1,20 +1,27 @@
-import React from "react";
+import React, { FC } from "react";
 import { useEffect, useState } from "react";
 import shape1White from "../svg/shape1_white.svg";
 import shape2White from "../svg/shape2_white.svg";
 import shape1Gold from "../svg/shape1_gold.svg";
 import shape2Gold from "../svg/shape2_gold.svg";
 
-export default function Color({}) {
+type Props= {
+  initAPP: boolean;
+  shape: number;
+  slideRight: FC;
+  slideLeft: FC;
+}
+
+
+
+export default function Color({shape, slideRight, slideLeft} : Props) {
 
 
   
   // This state represent the selected side - 1 for left side / 2 for right side / 0 for unselected
-  const [shape, setShape] = useState<number>(0);
+
   const [opc1, setOpc1] = useState<boolean>(false)
   const [opc2, setOpc2] = useState<boolean>(false)
-
-
 
 
   function opc1true() {
@@ -22,13 +29,10 @@ export default function Color({}) {
     setOpc1(!opc1)
   }
 
-  
-
   function opc2true() {
     setOpc2(!opc2)
     setOpc1(false)
   }
-
 
   return (
    <div className="main-container">
@@ -44,9 +48,9 @@ export default function Color({}) {
             </button>
         </div>
         <div className='btn-container'>
-            <button className='btn-back' >
+            <button onClick={() => slideLeft()} className='btn-back' >
             </button>
-            <button className='btn-next' >
+            <button onClick={() => slideRight()} className='btn-next' >
             </button>
         </div>
     </div>

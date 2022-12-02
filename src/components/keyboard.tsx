@@ -1,15 +1,24 @@
-import React, { FunctionComponent, useState, useRef, ChangeEvent } from "react";
+import React, { FunctionComponent, useState, useRef, ChangeEvent, FC } from "react";
 import KeyboardWrapper from '../components/keyboardWrapper';
 
 
 
-const Keyboard: FunctionComponent = () => {
+const Keyboard: FunctionComponent = ({shape, slideRight, slideLeft} : Props) => {
+
+
+  type Props= {
+    initAPP: boolean;
+    shape: number;
+    slideRight: FC;
+    slideLeft: FC;
+  }
+
   const [input, setInput] = useState("");
-  const keyboard = useRef();
+  const keyboard:any = useRef();
 
 
   const onChangeInput = (event: ChangeEvent<HTMLInputElement>): void => {
-    const input = event.target.value;
+    const input:string = event.target.value;
     setInput(input);
     keyboard.current.setInput(input);
   };
@@ -20,8 +29,6 @@ const Keyboard: FunctionComponent = () => {
 
 
   return (
-
-
     <div className="main-container">
      <h1>ESCRIBÍ TU MENSAJE</h1>
       <div className="inside-container" style={{flexDirection: 'column'}}>
@@ -31,9 +38,9 @@ const Keyboard: FunctionComponent = () => {
         <KeyboardWrapper keyboardRef={keyboard} onChange={setInput} />
       </div>
       <div className='btn-container'>
-          <button className='btn-back' >
+          <button onClick={() => slideLeft()} className='btn-back' >
           </button>
-          <button className='btn-next' >
+          <button onClick={() => slideRight()} className='btn-next' >
           </button>
       </div>
   </div>

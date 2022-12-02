@@ -1,15 +1,10 @@
 
 import React from 'react';
 import './App.css';
-import Shape from '../src/components/shape'
-// import Msj from '../src/components/msj'
-import Color from '../src/components/color'
 import Start from '../src/components/start'
-import End from '../src/components/end'
-import ImgSlider from './config/ImgSlider';
-import Keyboard from  '../src/components/keyboard'
 
 function App() {
+
   return (
     <div className="App">
       <div className="left">
@@ -19,7 +14,7 @@ function App() {
           </defs>
         </svg>
         <div className="clipped">
-          <Keyboard />
+            <Start />
         </div>
       </div>
     </div>

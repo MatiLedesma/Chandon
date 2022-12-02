@@ -3,11 +3,35 @@
   src: url(font/f_grotesk_bold.otf);
 }
 
+
+::-webkit-scrollbar
+{
+  display: none;
+}
+
+::-webkit-scrollbar-track
+{
+}
+
+::-webkit-scrollbar-thumb
+{
+
+}
+
+
 body{
   font-family: 'Chandon';
   overflow: hidden !important;
   text-transform: uppercase;
   color: #101820;
+}
+
+.container-scroll{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  white-space: no-wrap;
 }
 
 
@@ -62,7 +86,7 @@ h1{
   align-items: center;
   width: 100%;
   height: 100%;
-}gb
+}
 
 .button-start{
   z-index: 10;
@@ -114,7 +138,7 @@ h1{
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 100%;
+  width: 50vh;
 }
 
 
@@ -169,7 +193,7 @@ input[type="radio"] {
   width: 3vh;
   height: 3vh;
   border-radius: 50%;
-  margin-top: 5vh;
+  /* margin-top: 5vh; */
   transition: all 0.5s;
 }
 
@@ -280,6 +304,7 @@ input:focus::placeholder {
 .shape{
   width: 86%;
   filter: drop-shadow(0.3vh 0.3vh 0.5vh rgba(0, 0, 0, 0.11));
+  margin-bottom:  1vh;
 }
 
 button{
@@ -341,7 +366,7 @@ button{
   display: flex;
   position: absolute;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 100%;
