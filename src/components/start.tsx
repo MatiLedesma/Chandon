@@ -35,7 +35,7 @@ export default function Start() {
     
           </svg>
             <button onClick={() => setinitAPP(!initAPP)} className="starClip">
-                <h2>start</h2>
+                <h1 style={{marginTop: '4vh'}}>INICIAR</h1>
             </button>
           </div>
           <img className='logo' src={logoWhite} alt="logo"/>

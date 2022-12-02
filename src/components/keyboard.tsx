@@ -2,16 +2,16 @@ import React, { FunctionComponent, useState, useRef, ChangeEvent, FC } from "rea
 import KeyboardWrapper from '../components/keyboardWrapper';
 
 
+type Props= {
+  initAPP: boolean;
+  shape: number;
+  slideRight: any;
+  slideLeft: any;
+}
 
-const Keyboard: FunctionComponent = ({shape, slideRight, slideLeft} : Props) => {
 
+const Keyboard: any = ({shape, slideRight, slideLeft} : Props) => {
 
-  type Props= {
-    initAPP: boolean;
-    shape: number;
-    slideRight: FC;
-    slideLeft: FC;
-  }
 
   const [input, setInput] = useState("");
   const keyboard:any = useRef();
@@ -32,7 +32,7 @@ const Keyboard: FunctionComponent = ({shape, slideRight, slideLeft} : Props) => 
     <div className="main-container">
      <h1>ESCRIBÍ TU MENSAJE</h1>
       <div className="inside-container" style={{flexDirection: 'column'}}>
-         <input type="text"       value={input}
+         <input type="text"  value={input}
         placeholder={"Toca acá para escribir"}
         onChange={e => onChangeInput(e)}  style={{height: '32vh', marginBottom: '3vh'}}/>
         <KeyboardWrapper keyboardRef={keyboard} onChange={setInput} />

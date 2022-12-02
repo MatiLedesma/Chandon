@@ -1,16 +1,18 @@
 import React, { FC } from 'react'
 
+  
+type Props= {
+  initAPP: boolean;
+  shape: number;
+  slideRight: any;
+  slideLeft: any;
+}
+
+
+
 export default function Preview({slideRight, slideLeft} : Props)  {
 
 
-  
-  type Props= {
-    initAPP: boolean;
-    shape: number;
-    slideRight: FC;
-    slideLeft: FC;
-  }
-  
 
 
 

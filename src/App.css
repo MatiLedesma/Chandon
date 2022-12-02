@@ -95,14 +95,18 @@ h1{
 
 
 .starClip {
-  background-color: rgba(0, 0, 0, 0.186);
-  box-shadow: 0.5vh 0.5vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1) ;
-  height: 20vh;
-  width: 20vh;
-  filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255, 0.3) 0%, rgba(0,0,0, 0.3) 100%);
+  filter: drop-shadow(0.1vh 0.1vh 0.3vh #000);
+  height: 25vh;
+  width: 25vh;
   -webkit-clip-path: url(#starClip);
   clip-path: url(#starClip);
   z-index: 30;
+  color: #fff;
 }
 
 

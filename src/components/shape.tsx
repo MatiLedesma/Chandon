@@ -12,16 +12,16 @@ import End from "./end"
 
 
 
+type Props= {
+  initAPP: boolean;
+  shape: number;
+  slideRight: any;
+  slideLeft: any;
+}
 
 
 export default function Shape({initAPP} : Props) {
 
-  type Props= {
-    initAPP: boolean;
-    shape: number;
-    slideRight: FC;
-    slideLeft: FC;
-  }
   
   let fullWidht = document.body.clientWidth / 1.25;
 

@@ -8,8 +8,8 @@ import shape2Gold from "../svg/shape2_gold.svg";
 type Props= {
   initAPP: boolean;
   shape: number;
-  slideRight: FC;
-  slideLeft: FC;
+  slideRight: any;
+  slideLeft: any;
 }
 
 
