@@ -1,5 +1,5 @@
 import React, { FC } from 'react'
-
+import preview  from "../svg/preview.svg";
   
 type Props= {
   initAPP: boolean;
@@ -20,6 +20,7 @@ export default function Preview({slideRight, slideLeft} : Props)  {
     <div className="main-container">
        <h1>Vista previa</h1>
          <div className="inside-container">
+         <img className="shape" src={preview} alt="image" style={{height: '40vh'}}/>
          </div>
          <div className='btn-container'>
              <button onClick={() => slideLeft()} className='btn-back' >
