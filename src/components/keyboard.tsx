@@ -22,15 +22,14 @@ const Keyboard: FunctionComponent = () => {
   return (
 
 
-
     <div className="main-container">
      <h1>ESCRIBÍ TU MENSAJE</h1>
-      <div className="inside-container">
+      <div className="inside-container" style={{flexDirection: 'column'}}>
          <input type="text"       value={input}
         placeholder={"Toca acá para escribir"}
-        onChange={e => onChangeInput(e)}  style={{height: '40vh'}}/>
+        onChange={e => onChangeInput(e)}  style={{height: '32vh', marginBottom: '3vh'}}/>
+        <KeyboardWrapper keyboardRef={keyboard} onChange={setInput} />
       </div>
-      <KeyboardWrapper keyboardRef={keyboard} onChange={setInput} />
       <div className='btn-container'>
           <button className='btn-back' >
           </button>
@@ -38,7 +37,6 @@ const Keyboard: FunctionComponent = () => {
           </button>
       </div>
   </div>
-
 
   );
 };
