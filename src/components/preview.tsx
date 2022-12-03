@@ -1,33 +1,39 @@
-import React, { FC } from 'react'
-import preview  from "../svg/preview.svg";
-  
-type Props= {
-  initAPP: boolean;
-  shape: number;
+import { IForm } from "./shape";
+import shape1White from "../svg/shape1_white.svg";
+import shape2White from "../svg/shape2_white.svg";
+import shape1Gold from "../svg/shape1_gold.svg";
+import shape2Gold from "../svg/shape2_gold.svg";
+
+type Props = {
+  initAPP?: boolean;
+  shape?: number;
   slideRight: any;
   slideLeft: any;
+  formObject: IForm;
 }
 
 
 
-export default function Preview({slideRight, slideLeft} : Props)  {
-
-
-
-
-
+export default function Preview({ slideRight, slideLeft, formObject }: Props) {
   return (
     <div className="main-container">
-       <h1>Vista previa</h1>
-         <div className="inside-container">
-         <img className="shape" src={preview} alt="image" style={{height: '40vh'}}/>
-         </div>
-         <div className='btn-container'>
-             <button onClick={() => slideLeft()} className='btn-back' >
-             </button>
-             <button onClick={() => slideRight()} className='btn-next' >
-             </button>
-         </div>
-     </div>
-   );
+      <h1>Vista previa</h1>
+      <div className="inside-container">
+        <div className={formObject.color === "gold" ? "base white_background" : "base gold_background"}>
+          <div className="dot"></div>
+          <img className="shape" src={formObject.shape === "shape1" && formObject.color === "gold"
+            ? shape1Gold : formObject.color === "white" ? shape1White : formObject.shape === "shape2" && formObject.color === "gold"
+              ? shape2Gold : shape2White
+          } alt="shape alt" />
+          <p className="base-text">{formObject.message}</p>
+        </div>
+      </div>
+      <div className='btn-container'>
+        <button onClick={() => slideLeft()} className='btn-back' >
+        </button>
+        <button onClick={() => slideRight()} className='btn-next' >
+        </button>
+      </div>
+    </div>
+  );
 }

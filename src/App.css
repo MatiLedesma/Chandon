@@ -4,29 +4,23 @@
 }
 
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   display: none;
 }
 
-::-webkit-scrollbar-track
-{
-}
+::-webkit-scrollbar-track {}
 
-::-webkit-scrollbar-thumb
-{
-
-}
+::-webkit-scrollbar-thumb {}
 
 
-body{
+body {
   font-family: 'Chandon';
   overflow: hidden !important;
   text-transform: uppercase;
   color: #101820;
 }
 
-.container-scroll{
+.container-scroll {
   display: flex;
   width: 100%;
   height: 100%;
@@ -35,11 +29,11 @@ body{
 }
 
 
-.d-flex{
-  display: flex!important;
+.d-flex {
+  display: flex !important;
 }
 
-h1{
+h1 {
   z-index: 30;
   font-size: 2.6vh;
 }
@@ -79,7 +73,7 @@ h1{
 }
 
 
-.container-inside{
+.container-inside {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +82,7 @@ h1{
   height: 100%;
 }
 
-.button-start{
+.button-start {
   z-index: 10;
   position: absolute;
 }
@@ -98,8 +92,8 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255, 0.3) 0%, rgba(0,0,0, 0.3) 100%);
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
   filter: drop-shadow(0.1vh 0.1vh 0.3vh #000);
   height: 25vh;
   width: 25vh;
@@ -126,7 +120,7 @@ h1{
 
 
 
-.main-container{
+.main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +131,7 @@ h1{
 }
 
 
-.inside-container{
+.inside-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,28 +140,28 @@ h1{
 }
 
 
-.input-container__on{
+.input-container__on {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40vh;
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.351) 0%, rgba(255,255,255,0) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.351) 0%, rgba(255, 255, 255, 0) 100%);
   width: 50%;
   border-radius: 100rem;
-  border: 1px solid #fff ;
+  border: 1px solid #fff;
   margin: 3vh;
-  box-shadow: 0.5vh 0.5vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1) ;
+  box-shadow: 0.5vh 0.5vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1);
   transition: all 0.1s;
 }
 
 
 
-.input-container__off{
+.input-container__off {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(255, 255, 255, 0) ;
+  border: 1px solid rgba(255, 255, 255, 0);
   justify-content: center;
   align-items: center;
   height: 40vh;
@@ -177,7 +171,7 @@ h1{
 }
 
 
-.input-radio{
+.input-radio {
   display: flex;
   background-color: #000;
 }
@@ -187,10 +181,10 @@ h1{
 input[type="radio"] {
   outline: 0.16vh solid #fff;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: rgba(255, 255, 255, 0.346);
-  box-shadow: 0.2vh 0.2vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.1vh 0.1vh 2vh rgba(0, 0, 0, 0.1) ;
+  box-shadow: 0.2vh 0.2vh 1.3vh rgba(0, 0, 0, 0.1), inset 0.1vh 0.1vh 2vh rgba(0, 0, 0, 0.1);
   margin: 0;
   font: inherit;
   color: #fff;
@@ -210,20 +204,20 @@ input[type="radio"]:checked {
   border: 2px solid #fff;
   outline-color: transparent;
   -webkit-animation: outline-checked;
-          animation: outline-checked;
+  animation: outline-checked;
   -webkit-animation-duration: 0.1s;
-          animation-duration: 0.1s;
+  animation-duration: 0.1s;
   -webkit-animation-iteration-count: 4;
-          animation-iteration-count: 4;
+  animation-iteration-count: 4;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  animation-direction: alternate;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.069);
 }
 
 
-input[type="radio"]:checked::before{
+input[type="radio"]:checked::before {
   content: "";
   background-color: rgb(255, 255, 255);
   border-radius: 100%;
@@ -233,26 +227,26 @@ input[type="radio"]:checked::before{
 
 @-webkit-keyframes outline-checked {
   0% {
-      outline-offset: 0;
+    outline-offset: 0;
   }
 
   100% {
-      outline-offset: -0.2rem;
+    outline-offset: -0.2rem;
   }
 }
 
 @keyframes outline-checked {
   0% {
-      outline-offset: 0;
+    outline-offset: 0;
   }
 
   100% {
-      outline-offset: -0.2rem;
+    outline-offset: -0.2rem;
   }
 }
 
 
-input[type="text"]{
+input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,66 +260,66 @@ input[type="text"]{
 }
 
 
-input[type="text"]::placeholder{
-text-transform: uppercase;
-font-family: 'chandon';
-font-size: 2vh !important;
+input[type="text"]::placeholder {
+  text-transform: uppercase;
+  font-family: 'chandon';
+  font-size: 2vh !important;
 }
 
 input:focus::placeholder {
   color: transparent;
 }
 
-.hg-theme-default{
+.hg-theme-default {
   background-color: #F2E9DB !important;
   color: #000 !important;
   font-size: 2vh !important;
   font-family: 'Chandon' !important;
 }
 
-.hg-theme-default .hg-button{
-  height: 3vh !important ;
-  background: rgb(255,255,255) !important;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.351) 0%, rgba(255,255,255,0) 100%) !important;
+.hg-theme-default .hg-button {
+  height: 3vh !important;
+  background: rgb(255, 255, 255) !important;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.351) 0%, rgba(255, 255, 255, 0) 100%) !important;
   border-radius: 100rem !important;
-  box-shadow: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.1), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1)  !important;
+  box-shadow: 0.1vh 0.1vh 0.1vh rgba(0, 0, 0, 0.1), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1) !important;
   border: 0.1vh solid #fff;
   transition: 0.2s ease-out;
 }
 
-.hg-button:hover{
+.hg-button:hover {
   transform: scale(1.1);
-  box-shadow: 0.1vh 0.1vh 0.3vh rgba(0, 0, 0, 0.5), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1)  !important;
+  box-shadow: 0.1vh 0.1vh 0.3vh rgba(0, 0, 0, 0.5), inset 0.5vh 0.5vh 2vh rgba(0, 0, 0, 0.1) !important;
 }
 
 .simple-keyboard {
   width: 100% !important;
   padding-left: 3vh !important;
   padding-right: 3vh !important;
-} 
-
-
-.shape{
-  width: 86%;
-  filter: drop-shadow(0.3vh 0.3vh 0.5vh rgba(0, 0, 0, 0.11));
-  margin-bottom:  1vh;
 }
 
-button{
+
+.shape {
+  width: 86%;
+  filter: drop-shadow(0.3vh 0.3vh 0.5vh rgba(0, 0, 0, 0.11));
+  margin-bottom: 1vh;
+}
+
+button {
   border: none;
   background-color: transparent;
   cursor: pointer;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
   width: 100%;
   height: 7.3%;
-  z-index: 9;       
+  z-index: 9;
 }
 
 
-.btn-next{
+.btn-next {
   display: flex;
   width: 50%;
   background-image: url(../src/svg/btn-next.svg);
@@ -335,7 +329,7 @@ button{
 }
 
 
-.btn-back{
+.btn-back {
   display: flex;
   width: 50%;
   background-image: url(../src/svg/btn-back.svg);
@@ -344,7 +338,7 @@ button{
   background-repeat: no-repeat;
 }
 
-.btn-restart{
+.btn-restart {
   display: flex;
   width: 100%;
   background-image: url(../src/svg/btn-restart.svg);
@@ -355,9 +349,9 @@ button{
 
 
 
-.img_carrousel{
+.img_carrousel {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100vh;
   z-index: 1;
 }
@@ -366,7 +360,7 @@ button{
   max-width: 15vh;
 }
 
-.container-start{
+.container-start {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -377,7 +371,7 @@ button{
   z-index: 19;
 }
 
-.container-end{
+.container-end {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -394,4 +388,40 @@ input {
   font-size: 20px;
   border: none;
   box-sizing: border-box;
+}
+
+.base {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
+}
+
+.gold_background {
+  background-color: rgb(255, 208, 150);
+}
+
+.white_background {
+  background-color: white;
+}
+
+.base-text {
+  position: absolute;
+  top: 20vh;
+  width: 40vw;
+  text-align: center;
+}
+
+.dot {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #F7CDB2;
+  z-index: 2;
+  border-radius: 25px;
+  top: 5vh;
+  box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2);
 }

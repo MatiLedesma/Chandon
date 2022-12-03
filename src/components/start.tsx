@@ -4,22 +4,10 @@ import ImgSlider from '../config/ImgSlider'
 import logoWhite from '../img/logo-white.png'
 
 import Shape from '../components/shape'
-// import Msj from '../src/components/msj'
-
-
 
 
 export default function Start() {
-
-
-
-
   const [initAPP, setinitAPP] = useState<boolean>(false)
-
-  type Props= {
-  initAPP: boolean;
-}
-
 
 
     if (initAPP === false) {
@@ -44,9 +32,9 @@ export default function Start() {
         </div>
       );
     } else {
-      return (
+      return ( 
         <>
-        <Shape initAPP={initAPP} />
+        <Shape initAPP={initAPP} callback={(value) => {setinitAPP(value)}}/>
         </>
       );
     }
