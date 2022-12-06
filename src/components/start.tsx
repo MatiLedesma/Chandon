@@ -9,7 +9,6 @@ import Shape from '../components/shape'
 export default function Start() {
   const [initAPP, setinitAPP] = useState<boolean>(false)
 
-
     if (initAPP === false) {
       return (
         <div className="container-inside" >
