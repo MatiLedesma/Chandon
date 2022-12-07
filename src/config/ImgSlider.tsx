@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { images } from "./images"
 
 const ImgSlider = () => {
     const wait = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
-    useEffect(() => {
 
+    useEffect(() => {
         (async () => {
             const clipped = document.querySelector(".clipped");
             const slider = document.getElementById("slider");
@@ -29,7 +29,6 @@ const ImgSlider = () => {
                     if (!clipped) return;
                     await wait(2500);
                     slider.style.left = `-${clipped?.clientWidth * i}px`;
-                    slider.style.opacity = "1";
                     if (i === slider.children.length) {
                         i = 1;
                         slider.style.left = `0px`;
