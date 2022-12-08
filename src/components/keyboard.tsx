@@ -18,40 +18,12 @@ const Keyboard: React.FC<Props> = ({ shape, slideRight, slideLeft, callback }) =
 
   const onChangeInput = (event: ChangeEvent<HTMLInputElement>): void => {
     const input: string = event.target.value;
-
-    if (input.length < 50) {
-      setInput(input);
-    }
+    setInput(input);
     keyboard.current.setInput(input);
     console.log(input.length)
     console.log(input)
   };
   let length = input.length
-
-
-
-  // function wrapText(input:string) {   // Esta función se encarga de hacer el corte de palabra
-
-  //   var words = input.split(' ');
-  //   var line = '';
-
-  //   for(var n = 0; n < words.length; n++) {
-  //     var testLine = line + words[n] + ' ';
-  //     var metrics = ctx.measureText(testLine);
-  //     var testWidth = metrics.width;
-  //     if (testWidth > maxWidth && n > 0) {
-  //       ctx.fillText(line, x, y);
-  //       line = words[n] + ' ';
-  //       y += lineHeight;
-  //     }
-  //     else {
-  //       line = testLine;
-  //     }
-  //   }
-  //   ctx.fillText(line, x, y);
-  // }
-
-
 
 
 
