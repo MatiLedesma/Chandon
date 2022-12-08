@@ -250,14 +250,51 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+  flex-wrap: wrap !important;
+  flex-shrink: 1;
   text-align: center;
   width: 70%;
   background-color: rgba(214, 214, 214, 0.124);
   border: 1px solid #000;
   margin-bottom: 1vh;
   font-size: 2vh !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
   font-family: 'Chandon';
+  height: 100%;
+  white-space: pre-wrap; /* or pre-line */
+  display: none;
 }
+
+.textInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  width: 30vh;
+  height: 20vh;
+  background-color: rgba(214, 214, 214, 0.124);
+  border: 1px solid #000;
+  margin-bottom: 1vh;
+  font-size: 2vh !important;
+  flex-wrap: wrap !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
+  font-family: 'Chandon';
+  white-space: pre-wrap; /* or pre-line */
+  text-overflow:clip;
+  text-align: center;
+  padding-top: 26%;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.textInput::placeholder{
+  padding-top: 5%;
+  justify-content: center;
+}
+
 
 
 input[type="text"]::placeholder {
@@ -413,6 +450,7 @@ input {
   top: 15vh;
   width: 40vw;
   text-align: center;
+  font-size: 2vh;
 }
 
 .dot {

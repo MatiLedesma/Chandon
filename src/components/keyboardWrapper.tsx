@@ -34,11 +34,17 @@ const KeyboardWrapper: FunctionComponent<IProps> = ({
           '{space}',
         ],
       } }
+      
       display={{
         '{bksp}': 'Borrar',
         '{enter}': 'Enviar',
         '{space}': 'Espacio',
       }}
+
+      maxLength={
+        50
+      }
+
       mergeDisplay={true}
       keyboardRef={r => (keyboardRef.current = r)}
       layoutName={layoutName}
