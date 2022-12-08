@@ -250,13 +250,19 @@ input[type="text"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
+  flex-wrap: wrap !important;
+  flex-shrink: 1;
   text-align: center;
   width: 70%;
   background-color: rgba(214, 214, 214, 0.124);
   border: 1px solid #000;
   margin-bottom: 1vh;
   font-size: 2vh !important;
+  overflow-wrap: break-word !important;
+  word-wrap: break-word !important;
   font-family: 'Chandon';
+  height: 100%;
 }
 
 
@@ -413,6 +419,7 @@ input {
   top: 15vh;
   width: 40vw;
   text-align: center;
+  font-size: 2vh;
 }
 
 .dot {
