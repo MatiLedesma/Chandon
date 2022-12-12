@@ -24,7 +24,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  overflow-x: scroll;
+  overflow: hidden;
   white-space: no-wrap;
 }
 
@@ -41,16 +41,16 @@ h1 {
 .App {
   display: flex;
   min-height: 100vh;
-  background-color: #F7CDB2;
+  background: #F2E9DB;
   justify-content: center;
   align-items: center;
 }
 
-.left {
+.left{
   /* width: 3163px;
   height: 5741px; */
-  width: 80%;
-  height: 87vh;
+  width: 86%;
+  height: 92vh;
 }
 
 .svg {
@@ -64,10 +64,7 @@ h1 {
   justify-content: center;
   width: 100%;
   height: 87vh;
-  background: #F2E9DB;
   background-size: cover;
-  -webkit-clip-path: url(#my-clip-path);
-  clip-path: url(#my-clip-path);
   z-index: 1;
   overflow: hidden;
 }
@@ -148,7 +145,7 @@ h1 {
   height: 40vh;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.351) 0%, rgba(255, 255, 255, 0) 100%);
-  width: 50%;
+  width: 33%;
   border-radius: 100rem;
   border: 1px solid #fff;
   margin: 3vh;
@@ -165,7 +162,7 @@ h1 {
   justify-content: center;
   align-items: center;
   height: 40vh;
-  width: 50%;
+  width: 33%;
   border-radius: 10rem;
   margin: 3vh;
 }
@@ -286,7 +283,7 @@ input[type="text"] {
   text-overflow:clip;
   text-align: center;
   padding-top: 26%;
-  padding-left: 1vh;
+  padding-    : 1vh;
   padding-right: 1vh;
 }
 
@@ -331,8 +328,8 @@ input:focus::placeholder {
 
 .simple-keyboard {
   width: 100% !important;
-  padding-left: 3vh !important;
-  padding-right: 3vh !important;
+  padding-left: 5vh !important;
+  padding-right: 5vh !important;
 }
 
 

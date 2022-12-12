@@ -26,7 +26,7 @@ type Props = {
 
 
 export default function Shape({ initAPP, callback }: Props) {
-  let fullWidht = document.body.clientWidth / 1.25;
+  let fullWidht = document.body.clientWidth * 0.8605;
 
   const slideLeft = () => {
     var container: any = document.getElementById('scroll')

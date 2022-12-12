@@ -3,7 +3,6 @@ import img2 from '../img/2.webp';
 import img3 from '../img/3.webp';
 import img4 from '../img/4.webp';
 import img5 from '../img/5.webp';
-import img6 from '../img/6.webp';
 import img7 from '../img/7.webp';
 import img8 from '../img/8.webp';
 import img9 from '../img/9.webp';
@@ -20,7 +19,7 @@ import img19 from '../img/19.webp';
 import img20 from '../img/20.webp';
 
 const images = [
-    img1, img2, img3, img4, img5, img6,
+    img1, img2, img3, img4, img5,
     img7, img8, img9, img10, img11, img12, img13,
     img14, img15, img16, img17, img18, img19, img20
 ];
