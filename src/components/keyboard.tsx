@@ -40,7 +40,7 @@ const Keyboard: React.FC<Props> = ({ shape, slideRight, slideLeft, callback }) =
       <div className='btn-container'>
         <button onClick={() => slideLeft()} className='btn-back' >
         </button>
-        <h4 style={{textAlign: 'center'}}>quedan {50 - length} caracteres</h4>
+        <h2 style={{textAlign: 'center', fontSize: '1vh', paddingTop: '1vh'}}>quedan {50 - length} caracteres</h2>
         <button onClick={() => {
           slideRight();
           callback && callback(input);
