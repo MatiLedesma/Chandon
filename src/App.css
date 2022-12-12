@@ -26,6 +26,7 @@ body {
   height: 100%;
   overflow: hidden;
   white-space: no-wrap;
+  touch-action: none;
 }
 
 
@@ -401,7 +402,7 @@ button {
 }
 
 .logo {
-  max-width: 15vh;
+  max-width: 6.3vh;
 }
 
 .container-start {
