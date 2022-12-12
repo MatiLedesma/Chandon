@@ -6,7 +6,7 @@ import Start from '../src/components/start'
 function App() {
 
   return (
-    <div className="App">
+    <div onContextMenu={(e)=> e.preventDefault()} className="App">
       <div className="left">
         <svg className="svg">
           <defs>

@@ -19,27 +19,43 @@ const KeyboardWrapper: FunctionComponent<IProps> = ({
     if (button === "{shift}" || button === "{lock}") {
       setLayoutName(layoutName === "default" ? "shift" : "default");
     }
+
+    // if (button === "{enter}") {
+    // let textArea = document.getElementsByClassName('textInput')
+    // console.log(typeof(button))
+    // }
+
+    if (button === "A") {
+    console.log('A')
+   }
+
+   if (button === "Z") {
+    console.log('Z')
+   }
   };
+
 
 
   return (
     <Keyboard
     layout={ {
         'default': [
-          '! @ ( ) ? ¿ {bksp}',
-          '1 2 3 4 5 6 7 8 9 0',
-          'Q W E R T Y U I O P',
+          '! @ ( ) ? ¿',
+          '1 2 3 4 5 6 7 8 9 0 {bksp}',
+          'Q W E R T Y U I O P {enter}',
           'A S D F G H J K L Ñ',
           'Z X C V B N M $ % &amp;',
-          '{space}',
+          '{space}' ,
         ],
       } }
       
       display={{
         '{bksp}': 'Borrar',
-        '{enter}': 'Enviar',
+        '{enter}': 'ENTER',
         '{space}': 'Espacio',
       }}
+
+      newLineOnEnter={true}
 
       maxLength={
         50
