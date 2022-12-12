@@ -21,7 +21,7 @@ type Props = {
   shape?: number;
   slideRight?: any;
   slideLeft?: any;
-  callback?: (value: boolean) => void;
+  callback: (value: boolean) => void;
 }
 
 
@@ -79,19 +79,19 @@ export default function Shape({ initAPP, callback }: Props) {
         </div>
         <div className="main-container">
           <Color shape={shape} slideLeft={slideLeft} slideRight={slideRight} callback={(value) => {
-            setFormobj((state) => ({...state, color: value}));
+            setFormobj((state) => ({ ...state, color: value }));
           }} />
         </div>
         <div className="main-container">
           <Keyboard slideLeft={slideLeft} slideRight={slideRight} callback={(value) => {
-            setFormobj((state) => ({...state, message: value}))
+            setFormobj((state) => ({ ...state, message: value }))
           }} />
         </div>
         <div className="main-container">
-          <Preview slideLeft={slideLeft} slideRight={slideRight}  formObject={formObj} />
+          <Preview slideLeft={slideLeft} slideRight={slideRight} formObject={formObj} />
         </div>
         <div className="main-container">
-          <End />
+          <End callback={(value) => callback(value)} />
         </div>
       </div>
     );

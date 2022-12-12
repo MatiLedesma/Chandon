@@ -18,6 +18,7 @@ body {
   overflow: hidden !important;
   text-transform: uppercase;
   color: #101820;
+  overflow: hidden;
 }
 
 .container-scroll {
@@ -47,7 +48,7 @@ h1 {
   align-items: center;
 }
 
-.left{
+.left {
   /* width: 3163px;
   height: 5741px; */
   width: 86%;
@@ -64,7 +65,7 @@ h1 {
 .clipped {
   justify-content: center;
   width: 100%;
-  height: 87vh;
+  height: 90vh;
   background-size: cover;
   z-index: 1;
   overflow: hidden;
@@ -264,11 +265,12 @@ input[type="text"] {
   word-wrap: break-word !important;
   font-family: 'Chandon';
   height: 100%;
-  white-space: pre-wrap; /* or pre-line */
+  white-space: pre-wrap;
+  /* or pre-line */
   display: none;
 }
 
-.textInput{
+.textInput {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -283,15 +285,16 @@ input[type="text"] {
   overflow-wrap: break-word !important;
   word-wrap: break-word !important;
   font-family: 'Chandon';
-  white-space: pre-wrap; /* or pre-line */
-  text-overflow:clip;
+  white-space: pre-wrap;
+  /* or pre-line */
+  text-overflow: clip;
   text-align: center;
   padding-top: 26%;
   padding-left: 1vh;
   padding-right: 1vh;
 }
 
-.textInput::placeholder{
+.textInput::placeholder {
   padding-top: 5%;
   justify-content: center;
 }
@@ -336,12 +339,12 @@ input:focus::placeholder {
   padding-right: 5vh !important;
 }
 
-.hg-theme-default .hg-row .hg-button-container, .hg-theme-default .hg-row .hg-button:not(:last-child){
+.hg-theme-default .hg-row .hg-button-container, .hg-theme-default .hg-row .hg-button:not(:last-child) {
   margin-right: 0.3vh !important;
 }
 
 
-.hg-theme-default .hg-row:not(:last-child){
+.hg-theme-default .hg-row:not(:last-child) {
   margin-bottom: 0.6vh !important;
 }
 
@@ -413,8 +416,7 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  height: 87vh;
   z-index: 19;
   overflow: hidden;
 }
@@ -473,4 +475,10 @@ input {
   border-radius: 25px;
   top: 10vh;
   box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.slider_imgs {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
 }
