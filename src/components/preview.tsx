@@ -19,7 +19,7 @@ export default function Preview({ slideRight, slideLeft, formObject }: Props) {
     
   }, []);
   return (
-    <div className="main-container">
+    <>
       <h1>Vista previa</h1>
       <div className="inside-container">
         <div id="node" className={formObject.color === "gold" ? "base white_background" : "base gold_background"}>
@@ -53,6 +53,6 @@ export default function Preview({ slideRight, slideLeft, formObject }: Props) {
         }} className='btn-next' >
         </button>
       </div>
-    </div>
+    </>
   );
 }

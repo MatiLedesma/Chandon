@@ -26,28 +26,29 @@ type Props = {
 
 
 export default function Shape({ initAPP, callback }: Props) {
-  let fullWidht = document.body.clientWidth * 0.8605;
+  let fullWidht = document.body.clientWidth;
 
-  const slideLeft = () => {
-    var container: any = document.getElementById('scroll')
-    container.scrollLeft = container.scrollLeft - fullWidht;
-  }
-
-  const slideRight = () => {
-    var container: any = document.getElementById('scroll')
-    container.scrollLeft = container.scrollLeft + fullWidht;
-  }
-
+  
   // This state represent the selected side - 1 for left side / 2 for right side / 0 for unselected
   const [shape, setShape] = useState<number>(1);
   const [form, setForm] = useState<string>("shape1");
   const [formObj, setFormobj] = useState<IForm>({ shape: 'shape1', message: '', color: 'gold' });
-
+  const [steps, setSteps] = useState<number>(0);
+  
   const handleShape = (shape: string, shapeNumber: number) => {
     setForm(shape);
     setFormobj((state) => ({ ...state, shape: shape }));
     setShape(shapeNumber);
   }
+  
+  const slideLeft = () => {
+    steps >= 0 && setSteps(steps - 1);
+  }
+  
+  const slideRight = () => {
+    steps <= 4 && setSteps(steps + 1);  
+  }
+
 
   function Return() {
     callback &&
@@ -59,39 +60,42 @@ export default function Shape({ initAPP, callback }: Props) {
     return (
       <div id="scroll" className="container-scroll">
         <div className="main-container">
-          <h1>ELEGÍ LA FORMA</h1>
-          <div className="inside-container">
-            <button className={form === "shape1" ? "input-container__on" : "input-container__off"} onClick={() => handleShape("shape1", 1)}>
-              <img className="shape" src={shape1} alt="shape1" />
-              <input checked={form === "shape1"} value="2" className="input-radio" type="radio" />
-            </button>
-            <button className={form === "shape2" ? "input-container__on" : "input-container__off"} onClick={() => handleShape("shape2", 2)}>
-              <img className="shape" src={shape2} alt="shape2" />
-              <input checked={form === 'shape2'} value="2" className="input-radio" type="radio" />
-            </button>
-          </div>
-          <div className='btn-container'>
-            <button onClick={() => Return()} className='btn-back' >
-            </button>
-            <button onClick={() => slideRight()} className='btn-next' >
-            </button>
-          </div>
-        </div>
-        <div className="main-container">
-          <Color shape={shape} slideLeft={slideLeft} slideRight={slideRight} callback={(value) => {
-            setFormobj((state) => ({ ...state, color: value }));
-          }} />
-        </div>
-        <div className="main-container">
-          <Keyboard slideLeft={slideLeft} slideRight={slideRight} callback={(value) => {
-            setFormobj((state) => ({ ...state, message: value }))
-          }} />
-        </div>
-        <div className="main-container">
-          <Preview slideLeft={slideLeft} slideRight={slideRight} formObject={formObj} />
-        </div>
-        <div className="main-container">
-          <End callback={(value) => callback(value)} />
+          {
+            steps === 0 ? (
+              <>
+                <h1>ELEGÍ LA FORMA</h1>
+                <div className="inside-container">
+                  <button className={form === "shape1" ? "input-container__on" : "input-container__off"} onClick={() => handleShape("shape1", 1)}>
+                    <img className="shape" src={shape1} alt="shape1" />
+                    <input checked={form === "shape1"} value="2" className="input-radio" type="radio" />
+                  </button>
+                  <button className={form === "shape2" ? "input-container__on" : "input-container__off"} onClick={() => handleShape("shape2", 2)}>
+                    <img className="shape" src={shape2} alt="shape2" />
+                    <input checked={form === 'shape2'} value="2" className="input-radio" type="radio" />
+                  </button>
+                </div>
+                <div className='btn-container'>
+                  <button onClick={() => Return()} className='btn-back' >
+                  </button>
+                  <button onClick={() => slideRight()} className='btn-next' >
+                  </button>
+                </div>
+              </>
+            ) : steps === 1 ? (
+              <Color shape={shape} slideLeft={slideLeft} slideRight={slideRight} callback={(value) => {
+                setFormobj((state) => ({ ...state, color: value }));
+              }} />
+            ) : steps === 2 ? (
+              <Keyboard slideLeft={slideLeft} slideRight={slideRight} callback={(value) => {
+                setFormobj((state) => ({ ...state, message: value }))
+              }} />
+
+            ) : steps === 3 ? (
+              <Preview slideLeft={slideLeft} slideRight={slideRight} formObject={formObj} />
+            ) : steps === 4 ? (
+              <End callback={(value) => callback(value)} />
+            ) : null
+          }
         </div>
       </div>
     );

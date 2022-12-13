@@ -24,7 +24,7 @@ export default function Color({ shape, slideRight, slideLeft, callback }: Props)
   };
 
   return (
-    <div className="main-container">
+    <>
       <h1>ELEGÍ EL COLOR</h1>
       <div className="inside-container">
         <button className={color === "gold" ? "input-container__on" : "input-container__off"} onClick={() => handleChangeColor('gold')}>
@@ -42,7 +42,7 @@ export default function Color({ shape, slideRight, slideLeft, callback }: Props)
         <button onClick={() => slideRight()} className='btn-next' >
         </button>
       </div>
-    </div>
+    </>
   );
 }
 

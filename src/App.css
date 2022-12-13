@@ -26,8 +26,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  white-space: no-wrap;
   touch-action: none;
+  align-items: center;
 }
 
 
@@ -51,8 +51,8 @@ h1 {
 .left {
   /* width: 3163px;
   height: 5741px; */
-  width: 86%;
-  height: 92vh;
+  width: 100%; /*86*/
+  height: 100vh; /*92*/
 }
 
 .svg {
@@ -63,9 +63,11 @@ h1 {
 
 
 .clipped {
+  display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-size: cover;
   z-index: 1;
   overflow: hidden;
@@ -121,13 +123,15 @@ h1 {
 
 
 .main-container {
+  /* align-self: center; */
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  z-index: 3;
+  /* z-index: 3; ???*/
 }
 
 
@@ -479,6 +483,6 @@ input {
 
 .slider_imgs {
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   object-fit: cover;
 }
